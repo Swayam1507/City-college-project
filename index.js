@@ -30,12 +30,6 @@ mongoose.connection.on('error', err=>{
 });
 
 app.use(express.json());
-
-app.use('/admin',require('./routes/admin'))
-app.use('/student',fetchuser,require('./routes/student'))
-app.use('/standards',fetchuser,require('./routes/standards'))
-app.use('/fees',fetchuser,require('./routes/fees'))
-app.use('/exam',fetchuser,require('./routes/exam'))
 app.use('/user',require('./routes/users'))
 
 const port=process.env.PORT;
