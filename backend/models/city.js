@@ -14,6 +14,7 @@ const citySchema = new mongoose.Schema(
     averageRent: String,
     costOfLivingIndex: String,
     averageAnnualRainfall: String,
+    isComingSoon: Boolean,
   },
   { timestamps: true }
 );
